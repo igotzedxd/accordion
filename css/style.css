@@ -1,0 +1,71 @@
+/* ===== IMPORTS ===== */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* ===== RESET START ===== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+/* ===== RESET END ===== */
+
+/* CSS START */
+
+.accordion {
+  width: 100vw;
+  margin-top: 10vh;
+}
+
+.row {
+  width: 90vw;
+  margin: 0 auto;
+  background: beige;
+  min-height: 60px;
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin-bottom: 1vh;
+}
+
+.btn {
+  position: absolute;
+  right: 20px;
+  background: transparent;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  border: 1px solid black;
+  display: grid;
+  place-content: center;
+}
+.content {
+  padding: 20px;
+  display: block;
+  background: whitesmoke;
+  display: none;
+}
+
+.show {
+  display: block;
+}
